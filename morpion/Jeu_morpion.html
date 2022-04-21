@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Jeu de Morpion</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </head>
+  <body>
+    <div id="morpion">
+        <table id="grid">
+          <tr>
+            <td id="pos_0_0"></td>
+            <td id="pos_0_1"></td>
+            <td id="pos_0_2"></td>
+          </tr>
+          <tr>
+            <td id="pos_1_0"></td>
+            <td id="pos_1_1"></td>
+            <td id="pos_1_2"></td>
+          </tr>
+          <tr>
+            <td id="pos_2_0"></td>
+            <td id="pos_2_1"></td>
+            <td id="pos_2_2"></td>
+          </tr>
+          <tr>
+            <td colspan="3"><button id="rejouer" type="submit">Rejouer</button></td>
+          </tr>
+        </table>
+      <div id="scores">
+        <p id="nbMatches"><span id="nbMatchesCount">1</span> manches</p>
+        <p class="scores-title">Scores</p>
+        <p id="player1" class="player1"><strong>O</strong> Joueur 1 : <span id="score1">0</span></p>
+        <p id="player2" class="player2"><strong>X</strong> Joueur 2 : <span id="score2">0</span></p>  
+        <p id="equalize" class="equalize">Egalité : <span id="scoreEqualize">0</span></p>  
+        <p id="surrender" class="surrender">Abandon : <span id="scoreSurrender">0</span></p>
+        <h4 id="message"></h4>
+      </div>
+    </div>
+  </body>
+</html>

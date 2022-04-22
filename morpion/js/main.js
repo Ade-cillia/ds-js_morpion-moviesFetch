@@ -25,7 +25,6 @@ $(document).ready(function() {
         let winVertical=true;
         let diagonalTopLeft = true;
         let diagonalBottomLeft = true;
-
         let actualPlayer = player==="player1"?1:2;
         for (let x = 0; x < gridCase[clickCaseArr[0]].length; x++) {
            if (gridCase[clickCaseArr[0]][x]!=actualPlayer) {
@@ -47,7 +46,6 @@ $(document).ready(function() {
                 diagonalBottomLeft=false
             }
         }
-
         if (winHorizontal||winVertical||diagonalTopLeft||diagonalBottomLeft) { 
             endRound(actualPlayer);
         } else if (!($.inArray(0, $.map(gridCase,(v)=>v.map((va)=>va))) > -1)) {

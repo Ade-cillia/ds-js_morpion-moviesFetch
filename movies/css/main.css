@@ -10,19 +10,16 @@
 }
 .movieCard{
     background-color: rgb(204, 204, 204);
-    filter: drop-shadow(0 0 10rem rgb(48, 15, 196));
+    filter: drop-shadow(0 0 10rem rgb(140, 121, 228));
     box-shadow: 5px 5px 5px grey;
     width: 500px;
     margin: 10px;
     cursor: pointer;
+    position: relative;
 }
 .movieCard:hover{
     transform: scale(1.02);
 
-}
-.center{
-    display: flex;
-    justify-content: center;
 }
 .movieCard h2{
     padding: 5px;
@@ -30,4 +27,36 @@
 }
 .movieDesc{
     padding: 10px;
+}
+.voteCountContainer{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    align-items: center;
+    background-color: rgb(153, 154, 241);
+    padding: 0px 10px;
+    top: 0px;
+    right: 0px;
+}
+/*Common*/
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*IMAGE*/
+.reverse{
+    transform: rotate(180deg);
+}
+.litle{
+    width: 50px;
 }
